@@ -1,0 +1,21 @@
+{
+  "name": "purescript-css-bem",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aykl/purescript-css-bem.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "test",
+    "bower.json"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^2.5.0",
+    "purescript-lists": "^3.4.0",
+    "purescript-exceptions": "^2.0.0"
+  }
+}
