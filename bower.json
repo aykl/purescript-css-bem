@@ -14,8 +14,8 @@
     "bower.json"
   ],
   "dependencies": {
-    "purescript-prelude": "^2.5.0",
-    "purescript-lists": "^3.4.0",
-    "purescript-exceptions": "^2.0.0"
+    "purescript-prelude": "^3.0.0",
+    "purescript-exceptions": "^3.0.0",
+    "purescript-lists": "^4.1.0"
   }
 }

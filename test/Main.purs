@@ -6,10 +6,10 @@ import Control.Monad.Eff (Eff)
 import Control.Monad.Eff.Exception (EXCEPTION, error, throwException)
 
 
-assertEqual :: forall a. (Eq a, Show a) => a -> a -> Eff (err :: EXCEPTION) Unit
+assertEqual :: forall a. Eq a => Show a => a -> a -> Eff (exception :: EXCEPTION) Unit
 assertEqual x y = unless (x == y) <<< throwException <<< error $ "Assertion failed: " <> show x <> " /= " <> show y
 
-main :: Eff (err :: EXCEPTION) Unit
+main :: Eff (exception :: EXCEPTION) Unit
 main = do
   let
     block = BEM.b "block"
